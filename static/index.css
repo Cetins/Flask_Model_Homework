@@ -1,0 +1,63 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(76, 75, 75);
+    margin: 0;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    box-shadow: 3px 4px 0px 0px #899599;
+    margin: 5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    grid-area: header;
+}
+
+main>section>p {
+    background-color: white;
+    box-shadow: 3px 4px 0px 0px #899599;
+    padding: 1rem;
+    grid-area: order;
+    margin: 10px;
+    border-radius: 1rem;
+}
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #899599;
+	background-color:white;
+	border-radius: 10px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:12px 12px;
+    margin: 12px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+    text-align: center;
+    grid-area: footer;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+      'header header header'
+      'order order order'
+      'order order order'
+      '. . footer';
+      grid-template-columns: 3fr 3fr 3fr;
+      grid-template-rows: auto;
+  }

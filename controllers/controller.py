@@ -3,7 +3,7 @@ from models.order_list import orders
 from app import app
 
 
-@app.route('/orders')
+@app.route('/')
 def index():
     return render_template('index.html', title='Order', orders=orders)
 
